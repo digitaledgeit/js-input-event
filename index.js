@@ -30,7 +30,7 @@ function assertElType(el) {
 module.exports = {
 
 	/**
-	 * Start listening for `input` events on an `<input>` element
+	 * Start listening for `input` events on an `<input type="text|password">` element
 	 * @param   {HTMLElement}   el
 	 * @param   {function()}    listener
 	 * @param   {boolean}       capture
@@ -126,7 +126,7 @@ module.exports = {
 	},
 
 	/**
-	 * Stop listening for `input` events on an `<input>` element
+	 * Stop listening for `input` events on an `<input type="text|password">` element
 	 * @param   {HTMLElement}   el
 	 * @param   {function()}    listener
 	 * @param   {boolean}       capture

@@ -10,11 +10,11 @@ Make your `input` events work in IE8-9 too.
 
 ### .bind(el, callback, capture)
 
-Start listening for `input` events on an `<input>` element.
+Start listening for `input` events on an `<input type="text|password">` element.
 
 ### .unbind(el, callback, capture)
 
-Stop listening for `input` events on an `<input>` element.
+Stop listening for `input` events on an `<input type="text|password">` element.
 
 *Note: This functionality is not yet implemented in IE8-9. Please raise an issue if you require it.*
 
