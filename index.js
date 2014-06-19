@@ -58,7 +58,7 @@ module.exports = {
 				},
 				set: function(val) {
 					oldValue = val;
-					oldValueProperty.set.call(this);
+					oldValueProperty.set.call(this, val);
 				}
 			}
 		;
