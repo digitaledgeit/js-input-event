@@ -1,0 +1,5 @@
+{
+	"name": "input-event",
+	"license": "MIT",
+	"scripts": ["index.js"]
+}

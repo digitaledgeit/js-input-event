@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Event Shim</title>
+</head>
+<body>
+	<input class="js-input" autofocus/>
+	<input class="js-button" type="button" value="Programatically change value"/>
+	<script src="../build/build.js"></script>
+	<script>
+
+		var event   = require('input-event');
+		var input   = document.querySelector('.js-input');
+		var button  = document.querySelector('.js-button');
+
+		event.bind(input, function(event) {
+			console.log('input');
+		});
+
+		button.onclick = function() {
+			input.value = (new Date()).toDateString();
+		}
+
+	</script>
+</body>
+</html>
